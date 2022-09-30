@@ -1,0 +1,363 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+*,html,body{
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/*Navigator*/
+header {
+	background: black;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	/* position: relative; */
+	position: sticky;
+	top:0;
+}
+
+.logo {
+	margin-right: auto;
+	display: flex;
+	gap: 6px;
+	position: sticky;
+	top:0;
+}
+
+.logo-img {
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+}
+
+.logo-title {
+	cursor: pointer;
+	transition: all .5s ease 0s;
+    padding-left: 20px;
+}
+
+.logo:hover {
+	color: #3e2093;
+	transform: rotate(2deg);
+}
+
+nav ul{
+	display: flex;
+	padding: 20px;
+}
+
+li {
+	list-style-type: none;
+	padding: 10px;
+}
+
+li a {
+	transition: all .5s ease 0s;
+	display: inline-block;
+}
+
+li a:hover {
+	color: #3e2093;
+	transform: rotate(2deg);
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+/*EndNavigator*/
+
+/*BackgrounColor*/
+.one{
+    background-image: url('assets/backgorund1.jpg');
+}
+
+.two{
+    background-color:#5e5d5e;
+}
+
+.tree{
+    background-color:#444345;
+}
+
+/*EndBackgroundColor*/
+
+/*Container*/
+.container1{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 300px 0;
+    height: 100vh;
+    width: 100%;
+}
+.container2{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    height: 100vh;
+    width: 100%;
+}
+.container3{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    height: 110vh;
+    width: 100%;
+}
+.container4{
+	max-width: 1170px;
+	margin:auto;
+}
+.container5{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    height: 60vh;
+    width: 100%;
+}
+/*EndContainer*/
+
+/*intro*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+    color:white;
+}
+.title1{
+    font-size: 80px;
+    font-weight: bold;
+    
+}
+.title2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+	padding:60px;
+    
+}
+.title3{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.description{
+    font-size: 20px;
+}
+/*EndIntro*/
+
+/*Card*/
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.card-item {
+	text-align: center;
+	width: 25%;
+	min-height: 300px;
+	max-height: 400px;
+	background: gray;
+	color: white;
+	padding: 24px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.card-description {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.icon {
+	width: 75px;
+	height: 75px;
+	margin: 50px;
+	padding: 4px;
+}
+/*EndCard*/
+
+/*Parallax*/
+.parallax {
+	background-image: url('assets/backgorund1.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	
+}
+
+.mt-10 {
+	margin-top: 20px;
+}
+/*EndParallax*/
+
+/*Footer*/
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+	padding:12px;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+/*EndFooter*/
+
+.cr{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	color:white;
+}
+a.scrolltotop {
+	background: #D50000 none repeat scroll 0 0;
+	bottom: 20px;
+	color: #ffffff;
+	display: none;
+	font-size: 20px;
+	height: 40px;
+	padding-top: 5px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	width: 40px;
+	z-index: 99;
+}
+/*scroll*/
+.gotopbtn{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #5029bc ;
+	bottom: 40px;
+	right: 50px;
+	padding: 13px;
+	border-radius: 20%;
+
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-size: 22px;
+}
+
+
+@media screen and (max-width: 500px) {
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+		opacity: 0.9;
+		border-radius:2px;
+}
+	
+	.container {
+		width: 100%;
+		padding: 10px;
+	}
+	.container3 {
+		width: 100%;
+		padding: 10px;
+		height:100vh;
+	}
+	
+	.intro {
+		margin-top: 20px;
+	}
+	
+	.img-foto {
+		padding: 100px;
+	}
+	
+@media(max-width: 500px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+	@media(max-width: 500px){
+		.footer-col{
+		width: 100%;
+	}
+	}
+}
+
+
